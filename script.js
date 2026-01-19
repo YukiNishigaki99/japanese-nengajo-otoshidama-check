@@ -25,10 +25,19 @@ function check() {
     let messages = [];
     let classes = []; // 色用
 
-    if (win1.includes(num)) { messages.push('１等'); classes.push('first'); }
-    if (win2.includes(last4)) { messages.push('２等'); classes.push('second'); }
-    if (specialWin.includes(last5)) { messages.push('特別賞'); classes.push('special'); }
-    if (win3.includes(last2)) { messages.push('３等'); classes.push('third'); }
+    if (win1.includes(num)) {
+        messages.push('１等');
+        classes.push('first');
+    }
+    if (win2.includes(last4)) {
+        messages.push('２等');
+        classes.push('second');
+    }
+    // if (specialWin.includes(last5)) { messages.push('特別賞'); classes.push('special'); }
+    if (win3.includes(last2)) {
+        messages.push('３等');
+        classes.push('third');
+    }
 
     // 結果表示
     if (messages.length > 0) {
@@ -43,7 +52,11 @@ function check() {
 
     // 入力履歴に追加（重複チェック）
     if (!enteredNumbers.some(item => item.number === num)) {
-        enteredNumbers.push({ number: num, result: messages.join(",") || 'はずれ', classes: classes });
+        enteredNumbers.push({
+            number: num,
+            result: messages.join(",") || 'はずれ',
+            classes: classes
+        });
     }
 
     // 履歴リスト表示
@@ -77,7 +90,9 @@ function downloadCSV() {
 
     // CSV文字列を作る
     const csvContent = "番号,結果\n" + enteredNumbers.map(item => `${item.number},${item.result}`).join("\n");
-    const blob = new Blob([csvContent], { type: "text/csv" });
+    const blob = new Blob([csvContent], {
+        type: "text/csv"
+    });
     const url = URL.createObjectURL(blob);
 
     // 一時的にリンクを作ってクリック
