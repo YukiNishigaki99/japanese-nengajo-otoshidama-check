@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@import url(anime.css);
+
+/* 
+.kiwi-maru-regular {
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+*/
+
+* {
+    text-align: center;
+    font-family: 'Kiwi Maru';
+}
+
+#post a {
+    color: #895b8a;
+    font-size: small;
+}
+
+.first {
+    color: crimson;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.r_first {
+    /* color: crimson; */
+    color: gold;
+    font-weight: bold;
+}
+
+.second {
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+.third {
+    color: seagreen;
+}
+
+.special {
+    color: gold;
+    font-weight: bold;
+}
+
+.miss,
+.history {
+    color: gray;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+input,
+button {
+    height: 50px;
+}

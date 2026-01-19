@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>年賀状お年玉チェック！</title>
+</head>
+
+<body>
+    <div id="newyear-animation"></div>
+    <header>
+        <h1>お年玉付き年賀はがき<br>当選確認</h1>
+        <h2>2026</h2>
+        <p id="post">
+            <a href="https://www.post.japanpost.jp/event/otoshidama2026/">2026（令和８）年用<br>お年玉付き年賀はがき・年賀切手<br>当選番号はこちら</a>
+        </p>
+    </header>
+    <main>
+        <p>年賀状番号を入力してください</p>
+        <input type="text" id="number" placeholder="例：123456"><br><br>
+        <button onclick="check()">確認</button>
+        <p id="result"></p>
+        <p id="count"></p>
+        <p id="totalCount"></p>
+        <p id="history"></p>
+        <!-- 入力履歴がここに表示される -->
+        <button onclick="downloadCSV()">CSVをダウンロード</button>
+
+    </main>
+
+</body>
+
+</html>
