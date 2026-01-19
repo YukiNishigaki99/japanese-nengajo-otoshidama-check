@@ -20,7 +20,8 @@
     </header>
     <main>
         <p>年賀状番号を入力してください</p>
-        <input type="text" id="number" placeholder="例：123456"><br><br>
+        <input type="text" id="number" inputmode="numeric" pattern="[0-9]*" placeholder="例：123456"><br><br>
+
         <button onclick="check()">確認</button>
         <p id="result"></p>
         <p id="count"></p>
@@ -35,4 +36,5 @@
 
 
 </html>
+
 
