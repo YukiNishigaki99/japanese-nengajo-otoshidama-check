@@ -30,7 +30,7 @@ This is a simple web application that allows you to check whether the lottery nu
 
 1. Enter the lottery number printed on your Nengajo postcard
 2. Click the "Check" button to view the result
-
+**
 1. 年賀状のお年玉番号を入力します  
 2. 「確認」ボタンを押すと当選結果が表示されます  
 
