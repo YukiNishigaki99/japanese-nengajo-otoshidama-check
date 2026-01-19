@@ -9,7 +9,7 @@ function check() {
     const win1 = ["455756"];
     const win2 = ["5037"];
     const win3 = ["73", "44", "84"];
-    // const specialWin = ["71632", "56540", "20161"];
+    const specialWin = ["71632", "56540", "20161"];
 
     if (!/^\d{6}$/.test(num)) {
         result.textContent = "";
@@ -33,7 +33,10 @@ function check() {
         messages.push('２等');
         classes.push('second');
     }
-    // if (specialWin.includes(last5)) { messages.push('特別賞'); classes.push('special'); }
+    if (specialWin.includes(last5)) {
+        messages.push('特別賞');
+        classes.push('special');
+    }
     if (win3.includes(last2)) {
         messages.push('３等');
         classes.push('third');
